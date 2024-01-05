@@ -15,6 +15,8 @@ window.onload = function(){
         section.scrollIntoView({behavior:"smooth"})
     }
 }
+// top 버튼 스크롤 기능
+
 }
 // window.onload = function(){
 //     // 비주얼 이동 버튼 스크롤 기능

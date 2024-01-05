@@ -768,3 +768,10 @@ body{
     line-height: 1.8;
     font-weight: 400;
 } */
+/* top 버튼 */
+.top-button{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+}
