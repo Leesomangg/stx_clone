@@ -16,20 +16,34 @@ window.onload = function () {
     }
   }
   // top 버튼 스크롤 기능
-const topBtn = document.getElementById("top-btn");
-topBtn.addEventListener("click" , function(even){
-    even.preventDefault();
+  const topBtn = document.getElementById("top-btn");
+  topBtn.addEventListener("click", function (event) {
+    event.preventDefault();
     // console.log(window.scrollY);
-    if(window.scrollY == 0){
-        window.scrollTo({
-            top:99999,
-            behavior: "smooth"
-        })
+    if (window.scrollY == 0) {
+      window.scrollTo({
+        top: 9999,
+        behavior: "smooth",
+      });
+    } else {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }
-    else{}
-})
-
-}
+  });
+  // 화살표 이미지 회전
+  const topBntImg = document.getElementById("top-btn-img");
+  window.addEventListener("scroll", function (scTop) {
+    scTop = window.document.documentElement.scrollTop;
+    if(scTop > 0){
+      topBntImg.classList.add("up")
+    }
+    else{
+      topBntImg.classList.remove("up")
+    }
+  });
+};
 // window.onload = function(){
 //     // 비주얼 이동 버튼 스크롤 기능
 //     const botton = document.querySelector(".visual-bt")
