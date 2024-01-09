@@ -43,6 +43,13 @@ window.onload = function () {
       topBntImg.classList.remove("up")
     }
   });
+  // 안내창 스크립트
+  const body = document.querySelector("body")
+  const modal = document.querySelector(".modal-wrap")
+  modal.addEventListener("click" , function(){
+    modal.style.display = "none"
+    fadeout(modal)
+  })
 };
 // window.onload = function(){
 //     // 비주얼 이동 버튼 스크롤 기능

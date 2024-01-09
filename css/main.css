@@ -45,6 +45,102 @@ body {
   width: 100%;
   clear: both;
 }
+/* 안내창 */
+body.active{
+  overflow-y: auto;
+}
+.modal-wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-main{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  position: relative;
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50% , -50%); */
+  border-radius: 50px;
+}
+.modal-main .modal-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  border: 6px solid #fff;
+  background: url("../images/Asset\ 1.png") no-repeat center rgb(250,224,212);
+  width: 130px;
+  height: 130px;
+  display: block;
+}
+.modal-nonotic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal-nonotic strong{
+  color: red;
+  background: linear-gradient(to top , yellow 50% , transparent 50%);
+}
+.modal-nonotic span{
+
+}
+.modal-close{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #d8d8d8;
+  border-radius: 0 0 50px 50px;
+}
+/* .modal-main .modal-nonotic{
+  display: block;
+  position: absolute;
+  top: 130px;
+  left: 35px;
+  text-align: center;
+  line-height: 2.5;
+  font-size: 21px;
+}
+.modal-main .modal-nonotic strong{
+  color: red;
+  background: linear-gradient(to top, yellow 40%, transparent 40%);
+  font-weight: 700;
+}
+.modal-main .modal-nonotic span{
+  font-size: 18px;
+}
+.modal-main .modal-close{
+  display: block;
+  position: absolute;
+  top: 455px;
+  left: 0;
+  line-height: 50px;
+  text-align: center;
+  font-size: 19px;
+  background-color: rgb(236,235,255);
+  width: 100%;
+  height: 50px;
+  border-radius: 0 0 50px 50px;
+}
+.modal-main .modal-close i{
+  font-size: 13px;
+} */
 /* 레이아웃 */
 .wrap {
   display: block;
