@@ -48,6 +48,8 @@ body {
 /* 안내창 */
 body.active{
   overflow-y: auto;
+  overflow-y: hidden;
+
 }
 .modal-wrap{
   position: fixed;
