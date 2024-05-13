@@ -46,23 +46,40 @@ body {
   clear: both;
 }
 /* 안내창 */
+<<<<<<< HEAD
 body.active {
   overflow-y: auto;
   overflow-y: hidden;
 }
 .modal-wrap {
+=======
+body.active{
+  overflow-y: auto;
+  overflow-y: hidden;
+
+}
+.modal-wrap{
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.5);
+=======
+  background-color: rgba(0,0,0,0.5);
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
   z-index: 99999;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+<<<<<<< HEAD
 .modal-main {
+=======
+.modal-main{
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -78,18 +95,27 @@ body.active {
   /* transform: translate(-50% , -50%); */
   border-radius: 50px;
 }
+<<<<<<< HEAD
 .modal-main .modal-logo {
+=======
+.modal-main .modal-logo{
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
   position: absolute;
   top: -50px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 50%;
   border: 6px solid #fff;
+<<<<<<< HEAD
   background: url("../images/Asset\ 1.png") no-repeat center rgb(250, 224, 212);
+=======
+  background: url("../images/Asset\ 1.png") no-repeat center rgb(250,224,212);
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
   width: 130px;
   height: 130px;
   display: block;
 }
+<<<<<<< HEAD
 .modal-nonotic {
   font-size: 20px;
   font-weight: 500;
@@ -101,6 +127,20 @@ body.active {
 .modal-nonotic span {
 }
 .modal-close {
+=======
+.modal-nonotic{
+  font-size: 20px;
+  font-weight: 500;
+}
+.modal-nonotic strong{
+  color: red;
+  background: linear-gradient(to top , yellow 50% , transparent 50%);
+}
+.modal-nonotic span{
+
+}
+.modal-close{
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -875,6 +915,7 @@ body.active {
   align-items: center;
   gap: 10px;
 }
+<<<<<<< HEAD
 .top-button .chat-btn span {
   position: absolute;
   top: 30px;
@@ -936,3 +977,66 @@ body.active {
     transform: translateY(0);
   }
 }
+=======
+.top-button .chat-btn span{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    width: 180px;
+    background-color:#fff;
+    border-radius: 23px;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+    display: none;
+}
+.top-button .chat-btn:hover span{
+    display: block;
+}
+.top-button .chat-btn{
+    animation: updown 1.5s infinite;
+    /* -webkit-animation: updown 1.5s infinite; */
+    /* 다른 브라우저에서도 작동 될 수 있게 하기 위해 -webkit을 사용. */
+}
+.top-button .shop-btn{
+    position: relative;
+    display: block;
+    width: 55px;
+    border-radius: 50%;
+    line-height: 55px;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+    margin-top: 2px;
+}
+.top-button .top-btn{
+    background-color: #ed1c24;
+    width: 55px;
+    border-radius: 50%;
+    line-height: 55px;
+    text-align: center;
+}
+/* 자바스크립트로 컨트롤 */
+.top-button .top-btn img{
+    transform: rotate(180deg);
+}
+.top-button .top-btn img.up{
+    transform: rotate(0deg);
+    /* 이미지의 위아래를 전환시키기 위해 적용 */
+}
+/* 애니메이션 효과 */
+@keyframes updown{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834

@@ -50,6 +50,7 @@ window.onload = function () {
     modal.style.display = "none"
     fadeout(modal)
   })
+<<<<<<< HEAD
 
 //isOpen 값에 따라 스크롤을 제어하는 함수
 function controlScroll(isOpen){
@@ -68,6 +69,8 @@ modal.addEventListener("click", function(){
 controlScroll(false);
 });
 
+=======
+>>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
 };
 // window.onload = function(){
 //     // 비주얼 이동 버튼 스크롤 기능
