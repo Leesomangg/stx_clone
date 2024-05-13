@@ -36,41 +36,35 @@ window.onload = function () {
   const topBntImg = document.getElementById("top-btn-img");
   window.addEventListener("scroll", function (scTop) {
     scTop = window.document.documentElement.scrollTop;
-    if(scTop > 0){
-      topBntImg.classList.add("up")
-    }
-    else{
-      topBntImg.classList.remove("up")
+    if (scTop > 0) {
+      topBntImg.classList.add("up");
+    } else {
+      topBntImg.classList.remove("up");
     }
   });
   // 안내창 스크립트
-  const body = document.querySelector("body")
-  const modal = document.querySelector(".modal-wrap")
-  modal.addEventListener("click" , function(){
-    modal.style.display = "none"
-    fadeout(modal)
-  })
-<<<<<<< HEAD
-
-//isOpen 값에 따라 스크롤을 제어하는 함수
-function controlScroll(isOpen){
-  if (isOpen) {
-    body.style.overflow = "hidden";
-  } else {
-    body.style.overflow = "auto";
+  const body = document.querySelector("body");
+  const modal = document.querySelector(".modal-wrap");
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    fadeout(modal);
+  });
+  //isOpen 값에 따라 스크롤을 제어하는 함수
+  function controlScroll(isOpen) {
+    if (isOpen) {
+      body.style.overflow = "hidden";
+    } else {
+      body.style.overflow = "auto";
+    }
   }
-}
-// 초기 모달 상태 설정
-const isOpen = true;
-controlScroll(isOpen);
-modal.addEventListener("click", function(){
-  modal.style.display = "none";
-// 모달이 닫힐 때는 스크롤을 다시 활성화
-controlScroll(false);
-});
-
-=======
->>>>>>> f20e1a33f5fb9a27e74b82446300848e0ea4d834
+  // 초기 모달 상태 설정
+  const isOpen = true;
+  controlScroll(isOpen);
+  modal.addEventListener("click", function () {
+    modal.style.display = "none";
+    // 모달이 닫힐 때는 스크롤을 다시 활성화
+    controlScroll(false);
+  });
 };
 // window.onload = function(){
 //     // 비주얼 이동 버튼 스크롤 기능
